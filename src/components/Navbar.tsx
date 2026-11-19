@@ -14,10 +14,16 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks = [
-    { name: 'Features', href: '#features' },
-    { name: 'How it Works', href: '#how-it-works' },
-    { name: 'ChimpChat vs ManyChat', href: '#compare', badge: 'Better' },
+interface NavLinkItem {
+  name: string;
+  href: string;
+  badge?: string;
+}
+
+  const navLinks: NavLinkItem[] = [
+    { name: 'Product', href: '#product' },
+    { name: 'Solutions', href: '#solutions' },
+    { name: 'Agencies', href: '#agencies' },
     { name: 'Pricing', href: '#pricing' },
     { name: 'FAQ', href: '#faq' },
   ];
@@ -30,7 +36,7 @@ export default function Navbar() {
           <span className="inline-flex items-center gap-1 bg-brand-yellow/15 text-brand-yellow px-2 py-0.5 rounded-full text-[11px] font-bold">
             <Sparkles className="w-3 h-3" /> NEW
           </span>
-          <span>Automated Instagram DMs & Comment-to-DM are now live with AI 2.0!</span>
+          <span>Automated Social DMs, Comments & Conversations are now live with AI 2.0!</span>
           <a 
             href="#pricing" 
             className="hidden sm:inline-flex items-center gap-1 text-brand-yellow hover:underline font-semibold ml-1"
@@ -59,19 +65,9 @@ export default function Navbar() {
                 />
                 <div className="absolute -bottom-1 -right-1 w-3.5 h-3.5 bg-emerald-500 rounded-full border-2 border-brand-dark flex items-center justify-center" title="Systems Online" />
               </div>
-              <div className="flex flex-col">
-                <div className="flex items-center gap-1.5">
-                  <span className="text-xl font-extrabold tracking-tight text-white group-hover:text-slate-100">
-                    Chimp<span className="text-brand-yellow">Chat</span>
-                  </span>
-                  <span className="bg-brand-yellow/10 text-brand-yellow text-[10px] font-bold px-1.5 py-0.5 rounded border border-brand-yellow/20">
-                    AI
-                  </span>
-                </div>
-                <span className="text-[10px] text-brand-muted tracking-wider uppercase font-semibold hidden sm:inline-block">
-                  Social Automation
-                </span>
-              </div>
+              <span className="text-xl sm:text-2xl font-extrabold tracking-tight text-white group-hover:text-slate-100 transition-colors">
+                Chimp<span className="text-brand-yellow">Chat</span>
+              </span>
             </a>
 
             {/* Desktop Navigation Links */}
