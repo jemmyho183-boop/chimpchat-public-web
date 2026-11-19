@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import SocialProof from './components/SocialProof';
 
 export default function App() {
   return (
@@ -7,9 +8,10 @@ export default function App() {
       {/* Sticky Glass Navbar */}
       <Navbar />
 
-      {/* Hero Section */}
+      {/* Main Page Flow */}
       <main className="flex-1">
         <Hero />
+        <SocialProof />
       </main>
     </div>
   );

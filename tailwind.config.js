@@ -36,11 +36,21 @@ export default {
         pulseGlow: {
           '0%, 100%': { opacity: '0.4', transform: 'scale(1)' },
           '50%': { opacity: '0.8', transform: 'scale(1.05)' },
+        },
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+        marqueeReverse: {
+          '0%': { transform: 'translateX(-50%)' },
+          '100%': { transform: 'translateX(0%)' },
         }
       },
       animation: {
         float: 'float 5s ease-in-out infinite',
         pulseGlow: 'pulseGlow 4s ease-in-out infinite',
+        marquee: 'marquee 35s linear infinite',
+        marqueeReverse: 'marqueeReverse 35s linear infinite',
       }
     },
   },
