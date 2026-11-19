@@ -48,7 +48,7 @@ export default function Hero() {
   }, [activeScenario]);
 
   return (
-    <section className="relative pt-6 pb-20 md:pt-12 md:pb-28 overflow-hidden">
+    <section id="product" className="relative pt-6 pb-20 md:pt-12 md:pb-28 overflow-hidden">
       {/* Background ambient lighting */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-brand-yellow/10 blur-[150px] rounded-full pointer-events-none -z-10" />
       <div className="absolute top-1/3 -left-32 w-[350px] h-[350px] bg-yellow-500/5 blur-[120px] rounded-full pointer-events-none -z-10" />
@@ -74,7 +74,7 @@ export default function Hero() {
         {/* Main Hero Header */}
         <div className="text-center max-w-4xl mx-auto space-y-6">
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.1]">
-            Turn Every Instagram DM & Comment Into{' '}
+            Turn Every DM, Comment & Conversation Into{' '}
             <span className="relative inline-block text-brand-yellow">
               Revenue
               <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 250 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -85,7 +85,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-lg sm:text-xl text-brand-muted max-w-2xl mx-auto leading-relaxed">
-            Your business shouldn't have to be online 24/7. ChimpChat automatically responds to DMs, converts post comments into instant checkouts, and engages new followers in seconds.
+            Never lose another customer to a slow reply. ChimpChat automatically answers inquiries in seconds, turns social comments into instant checkouts, and scales your sales 24/7 with intelligent AI.
           </p>
 
           {/* Action CTAs */}
@@ -205,10 +205,10 @@ export default function Hero() {
                     <div className="space-y-3">
                       <div className="flex items-center gap-3">
                         <div className="w-9 h-9 rounded-full bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center font-bold text-xs text-white">
-                          KP
+                          ED
                         </div>
                         <div>
-                          <p className="text-sm font-bold text-white">krupa.parmar</p>
+                          <p className="text-sm font-bold text-white">emma.davis</p>
                           <p className="text-xs text-slate-400">Commented on your Reel: "Fall Collection Drop"</p>
                         </div>
                       </div>
@@ -225,7 +225,7 @@ export default function Hero() {
                           <span>ChimpChat Auto-Reply (0.6s):</span>
                         </div>
                         <p className="text-xs text-slate-300">
-                          "Hey Krupa! Sent the direct link & 20% discount code to your DMs! Check your requests 📥✨"
+                          "Hey Emma! Sent the direct link & 20% discount code to your DMs! Check your requests 📥✨"
                         </p>
                       </div>
                     </div>
@@ -235,10 +235,10 @@ export default function Hero() {
                     <div className="space-y-3">
                       <div className="flex items-center gap-3">
                         <div className="w-9 h-9 rounded-full bg-gradient-to-tr from-blue-500 to-cyan-500 flex items-center justify-center font-bold text-xs text-white">
-                          RD
+                          AM
                         </div>
                         <div>
-                          <p className="text-sm font-bold text-white">rohit.dev</p>
+                          <p className="text-sm font-bold text-white">alex.miller</p>
                           <p className="text-xs text-slate-400">Replied to your Instagram Story</p>
                         </div>
                       </div>
@@ -263,10 +263,10 @@ export default function Hero() {
                     <div className="space-y-3">
                       <div className="flex items-center gap-3">
                         <div className="w-9 h-9 rounded-full bg-gradient-to-tr from-emerald-500 to-teal-500 flex items-center justify-center font-bold text-xs text-white">
-                          SM
+                          DT
                         </div>
                         <div>
-                          <p className="text-sm font-bold text-white">siddharth_m</p>
+                          <p className="text-sm font-bold text-white">david_turner</p>
                           <p className="text-xs text-slate-400">Sent a Direct Message</p>
                         </div>
                       </div>
@@ -318,9 +318,9 @@ export default function Hero() {
                       <div className="flex items-start gap-2">
                         <img src={chimpLogo} alt="" className="w-6 h-6 rounded-full mt-1 flex-shrink-0" />
                         <div className="bg-brand-surface rounded-2xl rounded-tl-sm p-3 text-xs text-slate-200 border border-white/5 max-w-[85%] leading-relaxed">
-                          {activeScenario === 'comment' && "Hey Krupa! 👋 Saw your comment on our new drop! Here is your private 20% discount code:"}
-                          {activeScenario === 'story' && "Hey Rohit! 🚀 Here is the exclusive link you requested from our story:"}
-                          {activeScenario === 'ai-faq' && "Hello Siddharth! 👋 Yes, we ship to Canada via DHL Express! Standard transit time is 3–5 business days."}
+                          {activeScenario === 'comment' && "Hey Emma! 👋 Saw your comment on our new drop! Here is your private 20% discount code:"}
+                          {activeScenario === 'story' && "Hey Alex! 🚀 Here is the exclusive link you requested from our story:"}
+                          {activeScenario === 'ai-faq' && "Hello David! 👋 Yes, we ship to Canada via DHL Express! Standard transit time is 3–5 business days."}
                         </div>
                       </div>
                     )}
