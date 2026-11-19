@@ -1,13 +1,18 @@
+import Navbar from './components/Navbar';
 import chimpLogo from './assets/chimpchat-logo.jpg';
 import { Sparkles, MessageSquare, ArrowRight, Zap, Shield, CheckCircle2 } from 'lucide-react';
 
 export default function App() {
   return (
-    <div className="relative min-h-screen bg-brand-dark bg-grid-pattern text-slate-100 flex flex-col items-center justify-center p-6 selection:bg-brand-yellow selection:text-black">
-      {/* Top subtle ambient glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-brand-yellow/10 blur-[130px] rounded-full pointer-events-none" />
+    <div className="relative min-h-screen bg-brand-dark bg-grid-pattern text-slate-100 flex flex-col selection:bg-brand-yellow selection:text-black">
+      {/* Top sticky Navbar */}
+      <Navbar />
 
-      <main className="relative z-10 max-w-3xl w-full text-center space-y-8 glass-card p-8 md:p-12 rounded-3xl border border-brand-border shadow-2xl">
+      {/* Top subtle ambient glow */}
+      <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-brand-yellow/10 blur-[140px] rounded-full pointer-events-none" />
+
+      <div className="flex-1 flex flex-col items-center justify-center p-6 my-10">
+        <main className="relative z-10 max-w-3xl w-full text-center space-y-8 glass-card p-8 md:p-12 rounded-3xl border border-brand-border shadow-2xl">
         {/* Logo Badge */}
         <div className="inline-flex items-center gap-3 bg-brand-surface border border-brand-border px-4 py-2 rounded-full">
           <img 
@@ -69,5 +74,6 @@ export default function App() {
         </div>
       </main>
     </div>
-  );
+  </div>
+);
 }
