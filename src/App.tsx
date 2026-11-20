@@ -4,8 +4,8 @@ import SocialProof from './components/SocialProof';
 
 export default function App() {
   return (
-    <div className="relative min-h-screen bg-brand-dark bg-grid-pattern text-slate-100 flex flex-col selection:bg-brand-yellow selection:text-black">
-      {/* Sticky Glass Navbar */}
+    <div className="relative min-h-screen bg-[#F6F6F4] text-[#241C15] flex flex-col selection:bg-[#FFE01B] selection:text-[#241C15]">
+      {/* Top Navbar */}
       <Navbar />
 
       {/* Main Page Flow */}
