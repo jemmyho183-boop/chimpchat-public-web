@@ -1,6 +1,8 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import SocialProof from './components/SocialProof';
+import FeatureBreakdown from './components/FeatureBreakdown';
+import HowItWorks from './components/HowItWorks';
 
 export default function App() {
   return (
@@ -12,6 +14,8 @@ export default function App() {
       <main className="flex-1">
         <Hero />
         <SocialProof />
+        <FeatureBreakdown />
+        <HowItWorks />
       </main>
     </div>
   );
